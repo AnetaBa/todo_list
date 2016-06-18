@@ -1,0 +1,16 @@
+ body {
+   color: blue;
+   background-color: #CCFFCC;
+ }
+
+p {
+  color: green;
+}
+
+h1 {
+    color: black;
+}
+
+p.errors{
+  color: red;
+}

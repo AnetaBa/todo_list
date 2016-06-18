@@ -1,0 +1,14 @@
+<h1>LISTA_ToDo</h1>
+<p><b>Lista rzeczy do zrobienia: </b></p>
+
+<%@to_dos.each do |to_do|%>
+  <div>
+    <h3>
+      <%=link_to(to_do.sumary, to_do_path(to_do)) %>
+    </h3>
+    <p><%=to_do.description%></p>
+    <hr></hr>
+  </div>
+<%end%>
+<%=link_to("dodaj zadanie", new_to_do_path)%>
+<%=image_tag("slonce") %>
